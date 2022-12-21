@@ -1,6 +1,7 @@
 import Navbar from "../components/navbar/Navbar";
 import Header from "../components/header/Header";
 import RedirectButton from "../components/buttons/RedirectButton";
+import Download from "../components/buttons/Download";
 import ProblemTable from "../components/tables/ProbelmTable";
 import { Fragment } from "react";
 import { Helmet } from "react-helmet";
@@ -30,6 +31,9 @@ function Problems() {
 
             <div className="col-auto">
               <RedirectButton href="/new-problem">New Problem</RedirectButton>
+            </div>
+            <div className="col-auto">
+              <Download href="https://people.sc.fsu.edu/~jburkardt/data/csv/addresses.csv">Download</Download>
             </div>
           </Header>
 
